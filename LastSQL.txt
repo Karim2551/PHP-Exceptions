@@ -1,0 +1,41 @@
+start
+0)id
+1)title
+2)logo !!!! - by php form to SQL 
+3)ceo
+4)category
+5)aim
+6)city
+7)type  - !!! radio button
+8)email
+9)phone
+
+CREATE TABLE start
+(
+id INT(6) AUTO_INCREMENT PRIMARY KEY,
+title VARCHAR(128) NOT NULL,
+mime VARCHAR(512),
+logo BLOB NOT NULL,
+ceo VARCHAR(512) NOT NULL,
+cat VARCHAR(512) NOT NULL,
+aim VARCHAR(512) NOT NULL,
+city VARCHAR(512) NOT NULL,
+type VARCHAR(512) NOT NULL,
+email VARCHAR(512) NOT NULL,
+phone VARCHAR(512) NOT NULL     
+) ENGINE = InnoDB;
+
+/////////////////////////////////////////////////////////////////////////
+
+/*user*/
+CREATE TABLE `as9`.`user` ( 
+`id` INT NOT NULL AUTO_INCREMENT , 
+`name` VARCHAR(512) NOT NULL ,
+ `login` VARCHAR(512) NOT NULL , 
+`password` VARCHAR(512) NOT NULL ,
+ `money` INT NOT NULL ,
+ `comp` VARCHAR(512) NOT NULL , 
+PRIMARY KEY (`id`)
+) ENGINE = InnoDB;
+
+INSERT INTO `user`(`name`, `login`, `password`, `money`, `comp`) VALUES ('Karim Zhakupov','Karim2551','123456',5000000,'AstAk');
